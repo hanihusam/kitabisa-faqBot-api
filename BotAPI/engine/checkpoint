@@ -1,0 +1,2 @@
+model_checkpoint_path: "/mnt/hanihusam.com/var/www/public_html/Bot/source/Bot/storage/engine/model.tflearn"
+all_model_checkpoint_paths: "/mnt/hanihusam.com/var/www/public_html/Bot/source/Bot/storage/engine/model.tflearn"

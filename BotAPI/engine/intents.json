@@ -1,0 +1,831 @@
+{
+  "intents": [
+    {
+      "tag": "sapaan",
+      "patterns": [
+        "Selamat *",
+        "Hello min",
+        "Hallo min",
+        "Hi. Mau tanya dong",
+        "Permisi min, mau nanya",
+        "Hai",
+        "Hi min",
+        "Pagi",
+        "Siang",
+        "Sore",
+        "Malam"
+      ],
+      "responses": [
+        "Hallo #orangbaik. Ada yang bisa saya bantu?",
+        "Hai #orangbaik. Ada yang ingin Anda tanyakan?",
+        "Selamat datang. Ingin menanyakan apa?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "salam",
+      "patterns": [
+        "Assalamu'alaikum",
+        "Assalamualaikum",
+        "Assalamu'alaikum. Mau nanya"
+      ],
+      "responses": [
+        "Wa'alaikumussalam. Hallo",
+        "Wa'alaikumussalam, ada yang ingin Anda tanyakan?",
+        "Wa'alaikumussalam, ingin menanyakan apa?"
+      ],
+      "context_set": ""
+    },
+    {
+      "tag": "terimakasih",
+      "patterns": [
+        "Thanks",
+        "Terima kasih",
+        "Makasih"
+      ],
+      "responses": [
+        "Sama-sama. Semoga membantu",
+        "Sama-sama. Terima kasih sudah bertanya",
+        "Sama-sama. Senang bisa membantu"
+      ]
+    },
+    {
+      "tag": "tentang",
+      "patterns": [
+        "Apa itu Kitabisa?",
+        "Apa sih Kitabisa itu?",
+        "Kitabisa.com itu apa ya?"
+      ],
+      "responses": [
+        "Kitabisa atau Kitabisa.com adalah platform untuk menggalang dana dan berdonasi secara online (crowdfunding) terpopuler di Indonesia"
+      ]
+    },
+    {
+      "tag": "badan_hukum",
+      "patterns": [
+        "Apakah Kitabisa memiliki badan hukum?"
+      ],
+      "responses": [
+        "Kitabisa memiliki badan hukum yayasan untuk aktivitas penggalangan dana, serta badan hukum Perseroan Terbatas (PT) untuk pengembangan teknologi."
+      ]
+    },
+    {
+      "tag": "operasional",
+      "patterns": [
+        "Bagaimana Kitabisa membiayai operasional?",
+        "Cara Kitabisa membiayai operasional seperti apa?",
+        "Dana operasional Kitabisa didapat dari mana?",
+        "Bagaimana dengan dana operasional Kitabisa?",
+        "Apakah kita bisa mendapatkan persenan dari galang dana yang diadakan?",
+        "Apakah donasi saya tersalurkan 100%?"
+      ],
+      "responses": [
+        "Sebagai social enterprise startup, Kitabisa mengenakan biaya administrasi sebesar 5% dari total donasi di sebuah campaign, kecuali campaign bencana alam dan zakat, tidak dikenakan biaya administrasi. Dengan model ini, kami bisa fokus mengembangkan teknologi dan layanan untuk terus mempermudah kegiatan menggalang dana dan donasi di Indonesia dan dunia"
+      ]
+    },
+    {
+      "tag": "legalitas",
+      "patterns": [
+        "Apakah Kitabisa legal dan berizin?",
+        "Apakah Kitabisa legal dan mendapat izin dari pemerintah untuk melakukan penggalangan dana?"
+      ],
+      "responses": [
+        "Yayasan Kitabisa tercatat di Kemenkumham, mendapatkan izin PUB (Penggalangan Uang dan Barang) dari Kemensos dengan SK Menteri no 478/HUK-PS/2017, dan diaudit oleh Kantor Akuntan Publik dengan hasil Wajar Tanpa Pengecualian."
+      ]
+    },
+    {
+      "tag": "lapor_galangdana_mencurigakan",
+      "patterns": [
+        "Bagaimana cara lapor halaman galang dana yang mencurigakan?",
+        "Cara lapor apabila ada halaman campaign yang mencurigakan"
+      ],
+      "responses": [
+        "Anda bisa melaporkan campaign yang terlihat mencurigakan melalui menu Laporkan yang ada di halaman campaign"
+      ]
+    },
+    {
+      "tag": "akun_kitabisa",
+      "patterns": [
+        "Apa itu akun Kitabisa?"
+      ],
+      "responses": [
+        "Akun adalah profil Anda yang tersimpan di sistem Kitabisa.\nDengan memiliki akun, Anda bisa mengakses semua fitur Kitabisa seperti menggalang dana dan berdonasi menggunakan dompet kebaikan."
+      ]
+    },
+    {
+      "tag": "harus_memiliki_akun",
+      "patterns": [
+        "Apakah saya harus memiliki akun untuk berdonasi?",
+        "Kalau mau donasi harus punya akun gak?"
+      ],
+      "responses": [
+        "Tidak, Anda dapat berdonasi tanpa memiliki akun Kitabisa.\nNamun, jika Anda membuat akun di Kitabisa, Anda dapat:\n1. Melihat riwayat donasi Anda juga dapat melihat status donasi secara online.\n2. Menggunakan fasilitas dompet kebaikan Dengan Dompet Kebaikan, Anda dapat mengisi saldo dan donasi berkali-kali tanpa harus transfer bank setiap saat (hingga saldo milik Anda habis)."
+      ]
+    },
+    {
+      "tag": "ubah_datadiri",
+      "patterns": [
+        "Apakah saya dapat mengubah data diri?",
+        "Bagaimana cara edit data diri?",
+        "Bagaimana cara saya ingin mengubah data profil?"
+      ],
+      "responses": [
+        "Anda dapat mengubah data secara mandiri, kecuali nama lengkap, alamat email, dan nomor WhatsApp.\nKhusus untuk penggalang dana, nama lengkap harus sesuai dengan nama yang tertera di KTP untuk akun personal, atau sesuai NPWP untuk akun organisasi jika ingin akun Anda terverifikasi.\n\nWhatsApp merupakan sarana komunikasi utama Kitabisa kepada penggalang dana, namun kami menyarankan untuk tetap memasukkan email di akun Anda. Pastikan nomor WhatsApp dan email yang dimasukkan masih aktif Anda gunakan."
+      ]
+    },
+    {
+      "tag": "biro_singkat",
+      "patterns": [
+        "Apa yang harus diisi di kolom Bio Singkat?",
+        "Apa yang harus saya isi di kolom Bio Singkat?"
+      ],
+      "responses": [
+        "Isi bio singkat dengan profil singkat tentang Anda seperti profesi Anda saat ini atau komunitas yang Anda ikuti serta aktif berpartisipasi.\n\nBio singkat penting diisi oleh campaigner, karena akan memengaruhi kredibilitas Anda sebagai pihak yang menggalang dana."
+      ]
+    },
+    {
+      "tag": "data_penunjang_laporan",
+      "patterns": [
+        "Apa saja data penunjang untuk melaporkan campaign?",
+        "Data apa saja yang diperlukan untuk saya melaporkan campaign?",
+        "Data apa saja yang diperlukan untuk saya melaporkan galang dana?"
+      ],
+      "responses": [
+        "Lampirkan hal-hal berikut untuk menunjang laporan yang Anda berikan:\n\n- Link berita/website.- Foto pendukung.\n- Bukti percakapan.\n- Kontak yang dapat dihubungi."
+      ]
+    },
+    {
+      "tag": "fundraiser",
+      "patterns": [
+        "Apa itu fundraiser?",
+        "Fundraiser itu maksudnya apa?",
+        "Apa sih fundraiser itu?"
+      ],
+      "responses": [
+        "Fundraiser adakah pihak yang membantu menggalang dana untuk sebuah halaman galang dana. Dengan menjadi seorang fundraiser, Anda akan memiliki halaman galang dana sendiri untuk menggalang dana, namun seluruh donasi yang terkumpul akan disalurkan ke campaign yang Anda sedang bantu (atau kami sebut halaman galang dana utama)."
+      ]
+    },
+    {
+      "tag": "biaya_admin",
+      "patterns": [
+        "Kenapa dikenakan biaya administrasi 5%?",
+        "Biaya administrasi 5% untuk apa ya?"
+      ],
+      "responses": [
+        "Selayaknya organisasi lain, Kitabisa memiliki biaya operasional bulanan.\nHal ini mencakup biaya tim, pengembangan teknologi, infrastruktur, biaya pemasaran, dan overhead lainnya.\n\nDengan model ini kami bisa fokus mengembangkan teknologi untuk memudahkan Anda menggalang dana dan berdonasi."
+      ]
+    },
+    {
+      "tag": "pemberian_dana",
+      "patterns": [
+        "Apakah Kitabisa langsung memberikan dana?",
+        "Untuk dana yang terkumpul apakah Kitabisa menyalurkannya langsung?",
+        "Apakah dana akan langsung Kitabisa salurkan?"
+      ],
+      "responses": [
+        "Tidak. Kitabisa.com hanya menyediakan fasilitas website untuk menggalang dana secara online, kami tidak memiliki dana yang bisa disalurkan"
+      ]
+    },
+    {
+      "tag": "menjadi_fundraiser",
+      "patterns": [
+        "Bagaimana cara menjadi fundraiser?",
+        "Cara menjadi fundraiser gimana?"
+      ],
+      "responses": [
+        "Anda dapat menjadi fundraiser untuk sebuah campaign melalui menu Jadi Fundraiser di halaman campaign via desktop sedangkan via mobile melalui menu Fundraiser."
+      ]
+    },
+    {
+      "tag": "biaya_galangdana",
+      "patterns": [
+        "Apakah ada biaya untuk menggalang dana dengan Kitabisa?",
+        "Apakah Kitabisa menarik uang dari pembuatan campaign?",
+        "Adakah biaya yang ditarik dari setiap pembuatan campaign?"
+      ],
+      "responses": [
+        "Anda dapat membuat halaman campaign secara gratis"
+      ]
+    },
+    {
+      "tag": "penggalang_dana",
+      "patterns": [
+        "Siapa saja yang bisa menggalang dana di Kitabisa?",
+        "Apakah saya bisa menggalang dana?",
+        "Bisa nggak aku buat campaign?",
+        "Bisa tidak saya mengadakan galang dana di Kitabisa?"
+      ],
+      "responses": [
+        "Kitabisa memfasilitasi siapa saja yang ingin menggalang dana, mulai dari NGO global, yayasan lokal, komunitas, himpunan alumni, mahasiswa, artis, hingga individu/pribadi yang ingin menggalang dana untuk tujuan sosial, membantu sesama atau menciptakan karya"
+      ]
+    },
+    {
+      "tag": "verifikasi_galangdana",
+      "patterns": [
+        "Apakah Kitabisa melakukan verifikasi terhadap proposal galang dana yang masuk?",
+        "Bagaimana cara Kitabisa memverifikasi proposal galang dana?",
+        "Adakah tahap verifikasi saat pengajuan proposal galang dana?",
+        "Setiap penggalangan dana apakah akan diverifikasi oleh pihak Kitabisa?"
+      ],
+      "responses": [
+        "Setiap penggalang dana (campaigner) wajib melampirkan ID KTP, foto diri terbaru, akun social media, dan jika diperlukan akan diwawancarai melalui telfon untuk melewati proses verifikasi"
+      ]
+    },
+    {
+      "tag": "campaign_fundraiser",
+      "patterns": [
+        "Apakah saya dapat mencairkan donasi dari campaign fundraiser?",
+        "Bisa gak saya sebagai fundraiser mencairkan dana dari campaign?"
+      ],
+      "responses": [
+        "Tidak. Semua donasi yang terkumpul di halaman campaign fundraiser akan disalurkan seluruhnya ke campaign utama. Artinya, yang bisa mencairkan donasi tersebut hanya campaigner dari campaign utama yang Anda bantu."
+      ]
+    },
+    {
+      "tag": "izin_penelitian",
+      "patterns": [
+        "Apakah Kitabisa memfasilitasi interview penelitian?",
+        "Apabila saya ingin melakukan penilitian di Kitabisa caranya gimana?"
+      ],
+      "responses": [
+        "Keperluan penelitian Anda dapat menggunakan dan mengolah informasi yang terdapat pada website, blog, dan help center kami. Selain itu kami tidak bisa memberikan akses lebih"
+      ]
+    },
+    {
+      "tag": "tidak_terverifikasi",
+      "patterns": [
+        "Bagaimana jika proposal galang dana tidak terverivikasi?",
+        "Nah kalau semisal tidak terverifikasi bagaimana?",
+        "Apabila tidak terverifikasi bagaimana?"
+      ],
+      "responses": [
+        "Jika tidak terverifikasi, maka penggalang dana tidak dapat mencairkan donasi yang terkumpul. Oleh sebab itu Kitabisa mewajibkan campaigner membuat update & laporan penggunaan dana melalui halaman campaign Kitabisa"
+      ]
+    },
+    {
+      "tag": "donatur",
+      "patterns": [
+        "Siapa yang akan donasi di campaign saya?",
+        "Siapakah biasanya yang akan berdonasi di Kitabisa?",
+        "Donatur Kitabisa biasanya siapa saja?",
+        "Siapa yang akan menjadi pendonasi untuk Campaign saya?"
+      ],
+      "responses": [
+        "Berdasarkan statistik, 40% donatur pertama berasal dari kenalan/lingkaran terdekat pemilik campaign, 30% kedua berasal dari temannya-teman, dan 30% berikutnya hingga tidak terbatas dari orang yang tidak dikenal. Artinya, Anda harus mendapatkan donasi terlebih dahulu dari orang terdekat sebelum menjangkau masyarakat yang lebih luas"
+      ]
+    },
+    {
+      "tag": "contoh_galangdana",
+      "patterns": [
+        "Contoh galang dananya seperti apa?",
+        "Galang dana di Kitabisa seperti apa?",
+        "Bentuk galang dana yang biasa dilakukan Kitabisa itu apa?"
+      ],
+      "responses": [
+        "Mulai dari galang dana untuk bantuan biaya pengobatan, memberikan beasiswa bagi yang membutuhkan, program yayasan/panti asuhan, mendirikan rumah ibadah/sekolah/infrastruktur umum, santunan bencana alam hingga galang dana antar alumni/komunitas, dll."
+      ]
+    },
+    {
+      "tag": "manfaat",
+      "patterns": [
+        "Apa manfaat menggunakan Kitabisa.com??",
+        "Manfaatnya apa sih kalau pakai Kitabisa?",
+        "Manfaat saya menggalang dana di Kitabisa apa ya?"
+      ],
+      "responses": [
+        "Apabila Anda penggalang dana, Kitabisa.com membuat proses galang dana Anda menjadi simple (mudah), transparan, akuntabel, dan viral.\nKenapa mudah? Karena Buat halaman campaign Anda dalam 5 menit. Setelahnya, seluruh administrasi donasi akan dikelola oleh Kitabisa dan Anda siap menerima donasi melalui 4 rekening bank dan kartu kredit. Tidak perlu lagi membuat catatan donasi secara manual dan menggunakan rekening personal yang rentan tercampur dengan uang pribadi.\nKenapa bisa transparan? Tampilkan informasi lengkap tentang campaign Anda di sebuah halaman yang dapat diakses oleh siapa saja secara online. Di halaman tersebut orang dapat melihat jumlah donasi yang terkumpul dan list donatur untuk memastikan donasi mereka sudah diterima.\nAkuntabel karena Melalui fitur update, setiap perkembangan dari campaign Anda akan langsung terkirim ke alamat email setiap donatur. Pastikan kepercayaan dan amanah donatur terjaga melalui fitur update.\nKenapa viral? Karena berbasis online, Kitabisa.com sangat memungkinkan campaign Anda menjadi viral di social media, dan mendapatkan donatur di luar jejaring Anda"
+      ]
+    },
+    {
+      "tag": "cara_galangdana",
+      "patterns": [
+        "Bagaimana cara menggalang dana di Kitabisa.com??",
+        "Saya ingin menggalang dana. Bagaimana caranya?",
+        "Cara galang dana",
+        "Kalau mau menggalang dana caranya gimana min?",
+        "Jika ingin galang dana caranya bagaimana min?",
+        "Oh kalau saya ingin melakukan galang dana di Kitabisa caranya gimana?",
+        "Oh kalau aku pengin menggalang dana di Kitabisa caranya gimana?"
+
+      ],
+      "responses": [
+        "#1 Klik menu 'Galang Dana'\n#2 Isi form penggalangan dana, berikan informasi dan cerita yang lengkap, transparan dan menarik seputar campaign Anda\n#3 Klik 'launch campaign saya' setelah Anda mengisi seluruh kolom yang tersedia dan Anda akan memiliki halaman galang dana online.\n\nSetelah campaign Live, silakan ajukan verifikasi akun dengan cara:\n#1 Login ke akun Anda\n#2 Klik setting\n#3 Klik verifikasi akun\n#4 Upload foto KTP dan foto diri (menyesuaikan dengan contoh yang sudah kami tampilkan pada halaman verifikasi)"
+      ]
+    },
+    {
+      "tag": "campaign",
+      "patterns": [
+        "Apa itu Galang Dana (campaign)?",
+        "Campaign itu apa ya?",
+        "Campaign maksudnya apa ya?"
+      ],
+      "responses": [
+        "Galang dana (campaign) merupakan kegiatan mencari atau menghimpun dana untuk tujuan tertentu"
+      ]
+    },
+    {
+      "tag": "badge_biru",
+      "patterns": [
+        "Apa arti dari badge biru di samping foto campaigner?",
+        "Apa arti badge biru?",
+        "Badge biru itu maksudnya apa sih?"
+      ],
+      "responses": [
+        "Badge biru atau lambang centang biru yang terdapat disebelah foto campaigner menunjukkan bahwa akun campaigner tersebut sudah terverifikasi"
+      ]
+    },
+    {
+      "tag": "data_diri_donasi_offline",
+      "patterns": [
+        "Apakah data diri donatur offline wajib dilengkapi?",
+        "Sebagai donatur offline apakah wajib melengkapi data diri?"
+      ],
+      "responses": [
+        "Data email dan nomor telepon donatur bersifat opsional. Masukkan data tersebut terutama jika Anda ingin donatur yang bersangkutan menerima email saat Anda posting update di halaman galang dana tersebut."
+      ]
+    },
+    {
+      "tag": "detail_donasi",
+      "patterns": [
+        "Apakah saya dapat melihat detail donasi campaign?",
+        "Dimana saya bisa melihat detail donasi campaign?"
+      ],
+      "responses": [
+        "Pastikan Anda login terlebih dahulu. Anda bisa melihat detail donasi via device yang berbeda dengan cara berikut:\n\nTampilan desktop:\n 1. Klik tombol Dashboard.\n 2. Klik menu Campaign Saya.\n3. Pilih salah satu campaign yang Anda inginkan.\n 4. Klik menu Donatur.\n5. Klik List Donatur.\n\nTampilan Mobile:\n1. Klik menu Campaign Saya.\n2. Pilih salah satu campaign yang Anda inginkan.\n3. Klik menu dropdown dan klik List Donatur."
+      ]
+    },
+    {
+      "tag": "biaya_donasi_offline",
+      "patterns": [
+        "Apakah donasi offline dikenakan biaya?"
+      ],
+      "responses": [
+        "Tidak"
+      ]
+    },
+    {
+      "tag": "donasi_offline",
+      "patterns": [
+        "Apa itu donasi offline di Kitabisa.com?",
+        "Apa maksud dari donasi offline?",
+        "Donasi offline itu maksudnya apa ya?"
+      ],
+      "responses": [
+        "Donasi Offline adalah fitur yang bisa digunakan oleh pemilik campaign untuk menjumlahkan donasi yang diterima secara langsung (tunai, transfer langsung ke rek pribadi dll) dengan donasi online tanpa perlu mentransfer uang tersebut ke rekening Kitabisa.\nMisal, donasi Anda di halaman campaign mencapai Rp 1.000.000, Kemudian ada donatur yang memberikan uang donasi Rp 500.000 secara langsung ke Anda (Tunai, transfer langsung ke rek pribadi, dll). Anda bisa memasukkan data donasi tersebut ke dalam halaman campaign tanpa perlu mentransfer uang Rp 500.000 ke rekening Kitabisa, sehingga data donasi di halaman campaign tetap update menjadi Rp 1.500.000."
+      ],
+      "context_set": "offline_donation"
+    },
+    {
+      "tag": "caranya",
+      "patterns": [
+        "Caranya?",
+        "Bagaimana caranya?",
+        "Caranya donasi offline"
+      ],
+      "responses": [
+        "#1 Klik ‘Donasi Offline’ di menu yang ada di halaman campaign. (pastikan Anda dalam kondisi login)\n#2 Isi data donatur Anda secara lengkap"
+      ],
+      "context_filter": "offline_donation"
+    },
+    {
+      "tag": "mencantumkan_nomor_rekening",
+      "patterns": [
+        "Apakah boleh mencantumkan nomor rekening di deskripsi campaign?",
+        "Kalau mencantumkan nomor rekening di deskripsi campaign boleh tidak?",
+        "Kalau didiskripsi campaign aku cantukin rekening boleh tidak?"
+      ],
+      "responses": [
+        "Tidak. Seluruh proses transaksi donasi dilakukan secara online dan melalui rekening kitabisa.com sebagai bentuk transparansi karena akan tercatat serta terverifikasi secara otomatis. Jika terdapat nomor rekening di deskripsi campaign maka dapat memungkinkan donatur untuk membuat donasi online tetapi melakukan transfer ke rekening yang tertera, sehingga donasi tidak dapat terverifikasi oleh sistem",
+        "Seluruh proses transaksi donasi dilakukan secara online dan melalui rekening kitabisa.com sebagai bentuk transparansi karena akan tercatat serta terverifikasi secara otomatis. Jika terdapat nomor rekening di deskripsi campaign maka dapat memungkinkan donatur untuk membuat donasi online tetapi melakukan transfer ke rekening yang tertera, sehingga donasi tidak dapat terverifikasi oleh sistem"
+      ]
+    },
+    {
+      "tag": "verifikasi_gagal",
+      "patterns": [
+        "Kenapa verifikasi saya gagal?",
+        "Apa yang menyebabkan verifikasi saya gagal?",
+        "verifikasi gagal",
+        "Kenapa verifikasi campaign saya gagal?"
+      ],
+      "responses": [
+        "Verifikasi ditolak/gagal dikarenakan hal berikut:\n#1 Foto KTP dan foto verifikasi diri yang Anda kirim kami anggap tidak sesuai dengan persyaratan,\n- Identitas dan wajah pada foto KTP harus terlihat jelas dan tidak terpotong\n- Wajah dan tulisan tangan pada kertas harus terlihat jelas dan tidak terpotong\n#2 Anda tidak memiliki campaign yang aktif di Kitabisa.com"
+      ]
+    },
+    {
+      "tag": "verifikasi_masih_gagal",
+      "patterns": [
+        "Saya sudah melengkapi persyaratan verifikasi namun status verifikasi saya masih tanda silang, itu kenapa ya?",
+        "Kok status verifikasi saya masih gagal? Padahal persyaratan verifikasi sudah terpenuhi",
+        "Kenapa masih gagal lagi ya min status verifikasi saya?",
+        "Kok verifikasi statusnya masih gagal?"
+      ],
+      "responses": [
+        "Proses verifikasi umumnya dilakukan dalam kurun waktu 2x24 jam hari kerja. Jika Anda sudah melengkapi seluruh berkas sesuai dengan persyaratan maka tim kami akan memverifikasi akun Anda dalam kurun waktu tersebut."
+      ]
+    },
+    {
+      "tag": "promosi_campaign",
+      "patterns": [
+        "Bagaimana supaya orang mau berdonasi di campaign saya?",
+        "Promosi camapign",
+        "Bagaimana cara mempromosikan campaign?",
+        "Biar banyak yang donasi gimana ya min?"
+      ],
+      "responses": [
+        "Silakan sebarkan link campaign ke lingkaran terdekat Anda melalui chat via Whatsapp/BBM/Line secara personal, serta sebarkan link ke seluruh social media yang Anda miliki. Silakan akses http://blog.kitabisa.com untuk tips terkait lainnya.\nPengunjung Kitabisa cenderung donasi ke campaign yang kontennya lengkap (ada foto), profilnya terpercaya (ada biografi dan latar belakang), dan sudah mendapatkan donasi setidaknya dari lingkaran terdekat. Donasi dari lingkaran terdekat di awal sangat penting untuk menambah kepercayaan calon donatur."
+      ]
+    },
+    {
+      "tag": "target_donasi",
+      "patterns": [
+        "Bagaimana cara mengubah target donasi?",
+        "Mau mengubah target donasi. Gimana caranya?",
+        "Target donasi campaignku mau aku rubah gimana ya caranya min?"
+      ],
+      "responses": [
+        "Target donasi dapat diubah melalui mobile web pada menu edit dashboard akun Anda"
+      ]
+    },
+    {
+      "tag": "dipromosikan_kitabisa",
+      "patterns": [
+        "Bagaimana caranya supaya campaign saya dapat dipromosikan Kitabisa?",
+        "Mau dong campaign saya dipromosikan Kitabisa",
+        "Itu biar campaign nya dipromosiin Kitabisa gimana ya caranya?",
+        "Bagaimana cara supaya campaign saya dipromosikan oleh pihak Kitabisa?"
+      ],
+      "responses": [
+        "Perlu diketahui bahwa tujuan utama akun media sosial Kitabisa adalah untuk menyebarkan cerita sukses dan inspiratif dari campaign-campaign yang telah terlaksana. Karena hal tersebut, kami tidak bisa menjamin bahwa campaign Anda dapat kami promosikan."
+      ]
+    },
+    {
+      "tag": "link_campaign",
+      "patterns": [
+        "Bagaimana cara mengganti link campaign?",
+        "Mau mengubah link camapign. Gimana caranya?",
+        "Link halaman campaignku campaign mau ku rubah gimana caranya min?",
+        "Mau ngerubah link halaman campaign caranya gimana?",
+        "cara merubah link halaman campaign gimana min caranya?"
+      ],
+      "responses": [
+        "Silakan menghubungi tim Kitabisa.com apabila Anda lupa dengan link campaign, atau ingin mengubah link campaign Anda.\nPenting diketahui bahwa link campaign yang telah terpakai, tidak dapat dipakai kembali."
+      ]
+    },
+    {
+      "tag": "laporan_penggalang_dana",
+      "patterns": [
+        "Apa saya harus membuat update laporan penggalangan dana saya?",
+        "Haruskah saya membuat laporan penggalang dana?",
+        "Perlu ya bikin laporan penggalang dana?",
+        "Penggalangan dana apakah perlu dibuat laporannya?"
+      ],
+      "responses": [
+        "Tentu saja! Ini adalah bentuk pertanggung jawaban Anda dengan amanah para donatur.\n\nAnda dapat mengikuti langkah berikut untuk menulis update/laporan:\n#1 Login ke akun Anda\n#2 Klik avatar akun Anda (terdapat pada kanan atas layar)\n#3 Klik campaign saya\n#4 Klik campaign yang ingin Anda update\n#5 Klik tab tulis update (terdapat pada kiri layar)\n#6 Isi update dan ikuti instruksi yang diminta\n#7 Update yang Anda tulis akan terkirim secara otomatis ke email donatur\n\nMohon berhati-hati dalam menulis update, karena update tidak dapat diubah"
+      ]
+    },
+    {
+      "tag": "campaign_tidak_ada",
+      "patterns": [
+        "Kenapa campaign saya tidak terlihat pada fitur search?",
+        "Kok campaign saya enggak ada pas di search?",
+        "Kok halaman campaignku gak ada min?",
+        "Halaman campaign saya kenapa tidak ditemukan ya min?"
+      ],
+      "responses": [
+        "Campaign yang muncul pada fitur search hanyalah campaign dengan akun terverifikasi dan sudah mendapatkan donasi"
+      ]
+    },
+    {
+      "tag": "periode_campaign",
+      "patterns": [
+        "Apakah periode campaign dapat diubah?",
+        "Jangka waktu campaign bisa dirubah nggak ya?",
+        "Periode penggalangan dana bisa diubah tidak?",
+        "Periode campaign apakah bisa diubah?",
+        "Apakah bisa merubah deadline campaign?"
+      ],
+      "responses": [
+        "Jika Anda ingin memperpanjang masa campaign silakan lakukan dengan cara:\n#1 Login ke akun Anda\n#2 Klik Edit Content pada bagian atas halaman campaign Anda\n#3 Klik Edit Deadline\n#4 Pilih tanggal batas akhir campaign lalu klik tombol Ubah Batas Akhir"
+      ]
+    },
+    {
+      "tag": "campaign_belum_terverifikasi",
+      "patterns": [
+        "Jika belum terverifikasi apakah campaign saya bisa menerima donasi?",
+        "Kalau belum terverifikasi, apakah campaign saya bisa mendapatkan donasi?"
+      ],
+      "responses": [
+        "Bisa. Tapi Anda tidak bisa mencairkan donasi tersebut hingga Anda terverifikasi."
+      ]
+    },
+    {
+      "tag": "judul_campaign",
+      "patterns": [
+        "Bagaimana cara mengubah judul campaign?",
+        "Cara ngubah judul campaign gimana ya min?",
+        "Cara merubah judul campaign gimana ya min?",
+        "Caranya merubah judul campaign"
+      ],
+      "responses": [
+        "Judul campaign dapat diubah dengan melakukan konfirmasi kepada tim Kitabisa melalui email support@kitabisa.com dengan format,\n\nSubject: Perubahan Judul Campaign\nIsi: Judul campaign yang ingin diubah dan perubahan judul yang diinginkan"
+      ]
+    },
+    {
+      "tag": "edit_konten_campaign",
+      "patterns": [
+        "Apakah saya bisa edit konten/deskripsi campaign saya?",
+        "Cara edit konten deskripsi campaign",
+        "Bagaimana cara merubah konten deskripsi campaign?",
+        "Caranya edit konten deskripsi gimana ya min?"
+      ],
+      "responses": [
+        "Bisa. Berikut langkah-langkah untuk mengedit konten/deskripsi campaign,\n#1 Silakan login ke akun Anda di Kitabisa (masukkan email yang terdaftar sebagai campaigner)\n#2 Setelah berhasil login, masukkan link campaign Anda pada space URL website\n#3 Setelah berada di halaman campaign Anda, mohon klik edit content\n#4 Kemudian klik edit campaign\n#5 Klik edit deskripsi\n#6 Silakan ketikkan deskripsi yang ingin Anda edit\n#7 Klik Simpan",
+        "Berikut langkah-langkah untuk mengedit konten/deskripsi campaign,\\n#1 Silakan login ke akun Anda di Kitabisa (masukkan email yang terdaftar sebagai campaigner)\\n#2 Setelah berhasil login, masukkan link campaign Anda pada space URL website\\n#3 Setelah berada di halaman campaign Anda, mohon klik edit content\\n#4 Kemudian klik edit campaign\\n#5 Klik edit deskripsi\\n#6 Silakan ketikkan deskripsi yang ingin Anda edit\\n#7 Klik Simpan"
+      ]
+    },
+    {
+      "tag": "cover_foto",
+      "patterns": [
+        "Bagaimana cara mengganti cover foto campaign?"
+      ],
+      "responses": [
+        "Berikut langkah-langkah untuk mengganti cover foto campaign,\n#1 Setelah login dan berada di halaman campaign Anda, mohon klik edit content\n#2 Kemudian klik edit campaign\n#3 Kik cover & video, kemudian klik ganti gambar\n#4 Silakan upload foto Anda, kemudian klik simpan"
+      ]
+    },
+    {
+      "tag": "deskripsi_campaign",
+      "patterns": [
+        "Bagaimana contoh deskripsi campaign yang baik?",
+        "Contohin deskripsi campaign dong min",
+        "Bisa ngasih contoh nggak deskripsi konten campaign yang baik seperti apa?",
+        "Deskripsi konten campaign yang baik seperti apa ya?"
+      ],
+      "responses": [
+        "Tuliskan secara detail tentang campaign Anda, berikan foto yang menarik, dan sertakan latar belakang pembuatan campaign. Selain itu, sertakan kontak Anda sehingga publik lebih percaya dengan campaign yang sedang Anda lakukan"
+      ]
+    },
+    {
+      "tag": "donasi_luar",
+      "patterns": [
+        "Bagaimana kalau ada donasi yang masuk dari luar website?",
+        "Kalau ada uang masuk dari luar halaman campaign saya bagaimana ya?",
+        "Bagaimana jika ada dana masuk dari luar website campaign saya?",
+        "Kalau ada duit masuk dari luar gimana ya min?"
+      ],
+      "responses": [
+        "Anda bisa mendata donasi tersebut, supaya muncul juga di website Kitabisa melalui fitur Donasi Offline di dashboard user. Dana tersebut tidak perlu ditransferkan ke rekening Kitabisa dan tidak dikenakan biaya administrasi"
+      ]
+    },
+    {
+      "tag": "camapign_berakhir",
+      "patterns": [
+        "Apa yang terjadi kalau masa campaign sudah berakhir, namun donasi tidak mencapai target?",
+        "Donasi belum mencapai target. Apa yang harus saya lakukan?",
+        "Kalau campaign saya udah selesai tapi donasi belum semua terkumpul gimana ya min?"
+      ],
+      "responses": [
+        "Anda dapat melakukan 2 hal berikut,\n1. Memperpanjang deadline campaign\n2. Mencairkan dana yang terkumpul (meski tidak mencapai target)"
+      ]
+    },
+    {
+      "tag": "ubah_email",
+      "patterns": [
+        "Apakah email yang selama ini digunakan bisa diubah?",
+        "Email yang sekarabg bisa diubah enggak ya min?",
+        "Bagaimana cara merubah email?",
+        "Mau ngubah email caranya gimana?"
+      ],
+      "responses": [
+        "Silakan menghubungi tim Kitabisa, apabila Anda ingin mengganti email. Silakan mengirimkan email ke support@kitabisa.com dengan subjek 'Permohonan Penggantian Email User'. Pada body text diisi dengan alamat email yang sebelumnya Anda pergunakan - alamat email yang baru"
+      ]
+    },
+    {
+      "tag": "cara_mencairkan_donasi",
+      "patterns": [
+        "Bagaimana cara mencairkan donasi yang sudah terkumpul?",
+        "Cara mencairkan uang donasinya gimana?",
+        "Mencairkan donasi yang sudah terkumpul"
+      ],
+      "responses": [
+        "Anda dapat melakukan pencairan dana apabila akun dan rekening telah berhasil terverifikasi. Berikut langkah-langkah untuk mencairkan donasi terkumpul,\n\nPENCAIRAN MELALUI MOBILE\n1.Silakan masuk ke akun Anda terlebih dahulu dan buka halaman galang dana Anda.\n2. Klik menu garis tiga di kiri atas lalu scroll dan pilih Campaign Saya\n3. Klik Campaign yang Anda ingin cairkan dananya\n4. Klik Overview lalu pilih Cairkan Dana\n5. Isi form yang telah disediakan lalu klik Selanjutnya\n6. Baca dengan teliti ringkasan pencairan dana lalu klik persetujuan syarat & ketentuan lalu klik Cairkan Dana\n7. Masukan 6 digit kode verifikasi yang telah dikirimkan ke nomor yang terdaftar lalu klik verifikasi\n8. Pencairan sedang di proses dalam 1x24 Jam\n\nPENCAIRAN MELALUI DESKTOP\n1. Silakan masuk ke akun Anda terlebih dahulu dan buka halaman galang dana Anda.\n2. klik menu garis tiga di kanan atas lalu pilih Dashboard.3. Pilih menu Campaign saya yang terletak di bawah edit campaign\n4. Klik Campaign yang Anda ingin cairkan dananya\n5. Pilih menu Pencairan Dana pada menu di sebelah kiri Anda lalu klik Cairkan Dana\n6. Isi kolom yang diberikan lalu klik Selanjutnya\n7. Baca dengan teliti ringkasan pencairan dana lalu klik persetujuan syarat & ketentuan lalu klik Cairkan Dana\n8. Masukan 6 digit kode verifikasi yang telah dikirimkan ke nomor yang terdaftar lalu klik verifikasi\n9. Pencairan sedang di proses dalam 1x24 Jam"
+      ]
+    },
+    {
+      "tag": "instant_paymeny",
+      "patterns": [
+        "Apa itu Instant Payment?",
+        "Penyerahan Donasi ke Dompet Campaigner?"
+      ],
+      "responses": [
+        "Instant Payment merupakan sistem yang didisain untuk campaigner, sehingga perolehan donasi dapat masuk secara otomatis ke fitur dompet kebaikan. Dengan adanya sistem tersebut, perolehan donasi campaign akan masuk secara otomatis ke fitur dompet kebaikan campaigner dalam kurun waktu 3x24 jam, berapapun nominal donasi yang diperoleh. Campaigner dapat melakukan pencairan kapanpun, baik ketika campaign masih berjalan, maupun ketika masa campaign telah berakhir."
+      ]
+    },
+    {
+      "tag": "kode_verifikasi_pencairan",
+      "patterns": [
+        "Apa yang harus saya lakukan ketika kode verifikasi pencairan tidak muncul?",
+        "Kok kode verifikasi pencairan tidak muncul?",
+        "Kenapa kode verifikasi pencairan tidak muncul?"
+      ],
+      "responses": [
+        "Jika Anda tidak mendapatkan kode verifikasi, silakan klik tab bertuliskan batalkan. Kemudian, mohon kembali mengisi form pencairan, supaya sistem kami dapat mengirimkan ulang kode verifikasi pencairan ke email dan no handphone Anda.\nApabila kode verifikasi masih belum dikirimkan, silakan menghubungi tim kami dengan mengirimkan email ke support@kitabisa.com (wajib menggunakan email yang terdata sebagai campaigner)."
+      ]
+    },
+    {
+      "tag": "pencairan_dana",
+      "patterns": [
+        "Saya bisa mencairkan dana ke bank apa saja?",
+        "Berapa biaya administrasi untuk pencairan dana?",
+        "Berapa biaya administrasi bank?",
+        "Biaya administrasi bank nya berapa ya untuk pencairan dana?"
+      ],
+      "responses": [
+        "Pencairan dana hanya difasilitasi untuk Bank dalam Negeri.\nBerikut Biaya administrasi yang akan dikenakan untuk pencairan tersebut,\n1. BCA dengan biaya administrasi Rp300\n2. Bank Mandiri dengan biaya administrasi Rp800\n3. BNI dengan biaya administrasi Rp2.500\n4. BNI Syariah dengan biaya administrasi Rp2.500\n5. BRI dengan biaya administrasi Rp2.500\n6. Bank Syariah Mandiri dengan biaya administrasi Rp2.500\n7. Bank CIMB Niaga dengan biaya administrasi Rp2.500\n8. Bank Muamalat dengan biaya adiministrasi Rp2.500\nSelain bank di atas akan dikenakan biaya administrasi Rp7.500"
+      ]
+    },
+    {
+      "tag": "pencairan_ditolak",
+      "patterns": [
+        "Mengapa pencairan saya ditolak?",
+        "Pencairan dana saya ditolak"
+      ],
+      "responses": [
+        "Ada beberapa hal yang membuat pencairan anda ditolak. Hal tersebut adalah,\n- Salah menulis Nomor Rekening\n- Belum menuliskan Update Campaign\n- Tim kitabisa belum mendapat bukti dan data untuk pencairan terkait"
+      ]
+    },
+    {
+      "tag": "syarat_pencairan_dana",
+      "patterns": [
+        "Apa saja syarat yang diperlukan untuk pencairan dana?",
+        "Syarat pencairan dana apa ya?",
+        "Apa saja syarat dan ketentuan proses pencairan?"
+      ],
+      "responses": [
+        "Kami sangat menganjurkan para campaigner untuk melakukan pencairan langsung ke rekening penerima dana. Tim Kitabisa berhak meminta bukti pendukung pencairan dana seperti Kartu Keluarga atau Identitas Pemilik Rekening untuk melakukan proses pencairan. Untuk akun atas nama Yayasan, pencairan tidak diperbolehkan menggunakan rekening pribadi. Harus menggunakan rekening atas nama Yayasan. Untuk akun Komunitas, pencairan disarankan melalui rekening Yayasan, namun apabila menggunakan rekening pribadi, tim Kitabisa berhak untuk meminta data berupa Kartu Identitas pemilik Rekening, struktur organisasi, dan surat keterangan aktif organisasi."
+      ]
+    },
+    {
+      "tag": "kode_unik",
+      "patterns": [
+        "Apa yang akan terjadi apabila saya lupa memasukkan kode unik pada nominal transfer?",
+        "Saya lupa memasukkan kode unik saat transfer. Bagaimana ya?"
+      ],
+      "responses": [
+        "Ketika donatur tidak mencantumkan kode unik pada saat transfer, maka donasi tidak akan terverifikasi secara otomatis. Jika ini terjadi pada Anda, Anda wajib melakukan konfirmasi dengan cara mengirimkan bukti transfer melalui email support@kitabisa.com"
+      ]
+    },
+    {
+      "tag": "cara_donasi",
+      "patterns": [
+        "Bagaimana cara berdonasi via Kitabisa?",
+        "Saya ingin berdonasi. Gimana ya caranya?",
+        "Kalau mau berdonasi di Kitabisa caranya gmn ya?",
+        "Cara donasi"
+      ],
+      "responses": [
+        "Donasi online bisa melalui website Kitabisa.com.\n#1 Pilih campaign yang Anda minati >> Klik tombol Donasi Sekarang >> Masukkan informasi yang diminta (jumlah donasi, kontak Anda, metode pembayaran). Di akhir proses donasi online, Anda akan memperoleh no rekening bank dan tagihan (nominal donasi + kode unik) yang diminta sistem, kecuali jika Anda membayar dengan kartu kredit.\n#2 Transfer dengan mencantumkan kode unik pada nominal transfer.\nMohon transfer tepat sesuai dengan nominal tagihan sistem (mencantumkan kode unik yang diberikan sistem), supaya donasi Anda terverifikasi secara otomatis oleh sistem. Kode unik tersebut juga akan diakumulasikan sebagai donasi pada campaign yang Anda maksud. Dalam 1 hari kerja, donasi terverifikasi secara otomatis oleh sistem Kitabisa"
+      ]
+    },
+    {
+      "tag": "tercencel",
+      "patterns": [
+        "Apabila saya sudah menerima notifikasi bahwa donasi saya tercancel. Namun, saya masih ingin berdonasi di campaign yang sama. Apa yang harus saya lakukan? Batalkan atau tetap transfer saja?"
+      ],
+      "responses": [
+        "Apabila Anda tetap masih ingin berdonasi di campaign yang sama, mohon mengulangi proses donasi online. Supaya Anda mendapatkan kode unik yang baru."
+      ]
+    },
+    {
+      "tag": "kode_unik",
+      "patterns": [
+        "Apa itu kode unik?",
+        "Kode unik itu yang mana sih?",
+        "Yang dimaksud kode unik itu apa?"
+      ],
+      "responses": [
+        "Kode unik adalah tiga digit angka terakhir pada nominal donasi, supaya sistem kami dapat mengenali dan memverifikasi donasi Anda secara otomatis."
+      ]
+    },
+    {
+      "tag": "notifikasi_tercencel",
+      "patterns": [
+        "Saya sudah transfer, tetapi mengapa saya mendapatkan notifikasi bahwa donasi tercancel?",
+        "Kenapa saya mendapatkan notifikasi tercancel, padahal sudah donasi?",
+        "Saya tadi udah transfer, tapi kenapa saya dapat notifikasi kalau donasi gagal atau dibatalkan?"
+      ],
+      "responses": [
+        "Umumnya, donasi akan terverifikasi dalam 1 hari kerja setelah transfer, kecuali,\n#1 Kode unik donasi yang dicantumkan salah.\n#2 Nominal transfer donasi tidak mencantumkan kode unik.\n#3 Proses transfer melebihi/terlalu dekat deadline transfer.\nApabila Anda sudah melakukan transfer, namun memperoleh notifikasi bahwa donasi Anda dibatalkan, silakan lakukan konfirmasi"
+      ],
+      "context_set": "notifikasi_batal"
+    },
+    {
+	  "tag": "lupa_kode_unik",
+	  "patterns": [
+		"Min, baru saja saya transer donasi melalui rekening tetapi jumlah nominal yang saya transfer tidak sesuai dengan nominal yang diinstruksikan, itu bagaimana ya?",
+		"Apa yang terjadi jika saya lupa memasukkan kode unik?"
+	  ],
+	  "responses": [
+		"Jika Anda transfer tanpa kode unik karena satu dan lain hal, mohon konfirmasi transfer Anda dengan cara kirim bukti transfer ke support@kitabisa.com"
+	  ]
+	},
+    {
+      "tag": "konfirmasi_donasi_tercencel",
+      "patterns": [
+        "Bagaimana cara konfirmasinya?",
+        "Caranya?",
+        "Gimana konfirmasinya?"
+      ],
+      "responses": [
+        "Konfirmasi dapat dilakukan dengan mengikuti link yang dikirim ke email Anda atau mengirimkan bukti transfer ke email support@kitabisa.com. Harap menggunakan email yang Anda input ketika berdonasi online, ketika melakukan konfirmasi"
+      ],
+      "context_filter": "notifikasi_batal"
+    },
+    {
+      "tag": "konfirmasi_donasi",
+      "patterns": [
+        "Bagaimana cara konfirmasi donasi?"
+      ],
+      "responses": [
+        "Konfirmasi dapat dilakukan dengan mengikuti link yang dikirim ke email Anda atau mengirimkan bukti transfer ke email support@kitabisa.com. Harap menggunakan email yang Anda input ketika berdonasi online, ketika melakukan konfirmasi"
+      ]
+    },
+    {
+      "tag": "donatur_anonim",
+      "patterns": [
+        "Bagaimana cara berdonasi tanpa mencantumkan nama (anonim)?",
+        "Biar donasi tapi nggak nyantumin nama caranya gimana?"
+      ],
+      "responses": [
+        "Apabila donatur tidak menginginkan namanya dicantumkan pada halaman campaign, silakan klik pilihan untuk berdonasi sebagai anonim setelah memasukan nominal donasi. Meski memilih anonim, Anda tetap diwajibkan mengisi data diri yang diminta agar tim Kitabisa tetap dapat melaporkan status donasi dan mendapat update dari campaigner. Perlu diketahui bahwa status anonim hanya berlaku pada halaman campaign. Campaigner ataupun tim KItabisa masih tetap dapat melihat identitas donasi Anda"
+      ]
+    },
+    {
+      "tag": "tambah_saldo",
+      "patterns": [
+        "Bagaimana cara menambah saldo dompet kebaikan?",
+        "Tambah saldo dompet kebaikan"
+      ],
+      "responses": [
+        "#1 Login ke akun Anda\n#2 Klik menu Dompet Kebaikan\n#3 Klik tombol Tambah deposit di menu Dompet Kebaikan\nIkuti instruksi yang diminta. Di akhir proses, Anda akan diberikan no. rekening bank dan kode unik.\n#4 Transfer tepat sesuai dengan tagihan seperti halnya berdonasi, jangan lupa mencantumkan kode unik di transfer Anda.\n#5 Top up akan terverifikasi secara otomatis."
+      ]
+    },
+    {
+      "tag": "dompet_kebaikan",
+      "patterns": [
+        "Apa itu dompet kebaikan?",
+        "Dompet kebaikan itu maksudnya apa ya?",
+        "Apa yang dimaksud dengan dompet kebaikan?"
+      ],
+      "responses": [
+        "Bagi Donatur dompet kebaikan diciptakan untuk memudahkan Anda berdonasi tanpa harus melakukan transfer berulang kali ketika ingin berdonasi (transfer sekali, donasi berkali-kali hingga saldo habis).\nBagi Campaigner Dompet kebaikan juga berfungsi sebagai tempat untuk menampung perolehan donasi yang terkumpul saat Anda menggalang dana di Kitabisa.\nMenu pencairan juga dapat ditemukan di fitur dompet tersebut"
+      ]
+    },
+    {
+      "tag": "topup_saldo",
+      "patterns": [
+        "Bagaimana cara top up saldo Dompet Kebaikan?"
+      ],
+      "responses": [
+        "Anda dapat melakukan top up saldo dompet kebaikan dengan cara,\n#1 Login ke akun\n#2 Masuk ke dashboard akun\n#3 Klik menu dompet kebaikan\n#4 Klik menu tambah deposit"
+      ]
+    },
+    {
+      "tag": "undangan",
+      "patterns": [
+        "Bagaimana caranya mengundang tim Kitabisa sebagai pembicara di event kami?",
+        "Apakah Kitabisa bisa diundang untuk mengisi acara sebuah event?",
+        "Kalau mau ngundang pembicara dari Kitabisa caranya gimana ya?",
+        "Mengundang pemateri untuk suatu event dari Kitabisa"
+      ],
+      "responses": [
+        "Silakan kirimkan undangan secara resmi ke email iqbal@kitabisa.com. Lampirkan undangan resmi dan TOR kegiatan"
+      ]
+    },
+    {
+      "tag": "donasi_melewati_deadline",
+      "patterns": [
+        "Bagaimana jika saya belum transfer dan melewati batas waktu?",
+        "Apa yang terjadi jika saya lupa belum transfer dan sudah melebihi deadline?"      
+      ],
+      "responses": [
+        "Anda bisa mengulang proses donasi di campaign yang ingin dibantu.\n\nCatatan: Abaikan tagihan sebelumnya , untuk mendapat nominal dan kode unik terbaru."
+      ]
+    },
+    {
+      "tag": [
+        "kolaborasi",
+        "kerjasama"
+      ],
+      "patterns": [
+        "Apa yang harus saya lakukan apabila ingin berkolaborasi dengan Kitabisa?",
+        "Bagaimana caranya supaya bisa berkolaborasi dengan Kitabisa?",
+        "Saya ingin bekerjasama dengan Kitabisa. Prosedurnya seperti apa ya?",
+        "Adakah prosedur apabila ingin menjalin kerjasama dengan pihak Kitabisa?",
+        "Saya ingin menjalin kerjasama dengan pihak Kitabisa. Bagaimana ya prosedurnya?"
+      ],
+      "responses": [
+        "Mohon kirimkan via email support@kitabisa.com detail kerjasama yang Anda tawarkan"
+      ]
+    }
+  ]
+}
