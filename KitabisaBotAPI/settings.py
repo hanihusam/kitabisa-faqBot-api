@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = 'trh6%im+xy!0ey*g)rkdq1iepm(y^zp6^rc7bm3dp3z07ytj9z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://kitabisabot-api.herokuapp.com/']
 
 
 # Application definition
