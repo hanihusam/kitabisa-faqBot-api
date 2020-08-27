@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
-from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,7 +25,7 @@ SECRET_KEY = 'trh6%im+xy!0ey*g)rkdq1iepm(y^zp6^rc7bm3dp3z07ytj9z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://kitabisabot-api.herokuapp.com/', '.herokuapp.com']
+ALLOWED_HOSTS = ['https://kitabisabot-api.herokuapp.com', '.herokuapp.com']
 
 
 # Application definition
